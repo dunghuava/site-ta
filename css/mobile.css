@@ -1,0 +1,75 @@
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .ominext-reason .container {
+    overflow: hidden;
+  }
+  .ominext-reason .group-circle .circle-box {
+    float: none !important;
+    margin: 65px auto !important;
+    top: 0px !important;
+  }
+  .feedback-ominext .feedback-list .wrapper {
+    margin: 60px 30px;
+  }
+  .feedback-ominext .feedback-list .wrapper .feedback-text::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: -30px;
+  }
+  .follow-ominext, .get-profile {
+    height: 175px;
+  }
+  .follow-ominext .main .title, .get-profile .main .title {
+    font-size: 15px;
+  }
+  .follow-ominext .block p, .get-profile .block p {
+    font-size: 11px;
+  }
+  .follow-ominext .block h3, .get-profile .block h3 {
+    font-size: 15px;
+  }
+  .about-ominext .wrapper {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .about-ominext .wrapper img {
+    width: 80%;
+  }
+  .about-ominext .wrapper::after {
+    display: none;
+  }
+  .about-ominext .wrapper .retangle {
+    margin: auto;
+  }
+  .about-ominext .wrapper .retangle.one, .about-ominext .wrapper .retangle.two {
+    right: 5px;
+  }
+  .about-ominext .wrapper .retangle.three {
+    left: 5px;
+  }
+  .main-title h3 {
+    font-size: 30px;
+  }
+  .form-filter .control {
+    border-bottom: 1px solid rgba(220, 220, 220, 0.5);
+  }
+  .form-filter [class^=col-]:last-child .control {
+    border-bottom: 0px;
+  }
+  .home-slide .box-slide .boxes .description {
+    display: none;
+  }
+  .main-footer::after {
+    width: 200%;
+    height: 50%;
+    top: 0px;
+    left: -50%;
+  }
+  .main-footer .container .col-group li {
+    width: 50%;
+  }
+}/*# sourceMappingURL=mobile.css.map */

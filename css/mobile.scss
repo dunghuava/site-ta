@@ -1,0 +1,111 @@
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (max-width: 767px){
+    .container {
+        max-width: 100%;
+    }
+    .ominext-reason{
+        .container{
+            overflow: hidden;
+        }
+        .group-circle{
+            .circle-box{
+                float: none !important;
+                margin: 65px auto !important;
+                top: 0px !important;
+            }
+        }
+    }
+    .feedback-ominext{
+        .feedback-list{
+            .wrapper{
+                margin: 60px 30px;
+                .feedback-text{
+                    &::before{
+                        width: 60px;
+                        height: 60px;
+                        top: -30px;
+                        left: -30px;
+                    }
+                }
+            }
+        }
+    }
+    .follow-ominext, .get-profile{
+        height: 175px;
+        .main{
+            .title{
+                font-size: 15px;
+            }
+        }
+        .block{
+            p{
+                font-size: 11px;
+            }
+            h3{
+                font-size: 15px;
+            }
+        }
+    }
+    .about-ominext{
+        .wrapper{
+            margin-bottom: 25px;
+            text-align: center;
+            img{
+                width: 80%;
+            }
+            &::after{
+                display: none;
+            }
+            .retangle{
+                margin: auto;
+                &.one,&.two{
+                    right: 5px;
+                }
+                &.three{
+                    left: 5px;
+                }
+            }
+        }
+    }
+    .main-title{
+        h3{
+            font-size: 30px;
+        }
+    }
+    .form-filter{
+        .control{
+            border-bottom: 1px solid rgba($color: #dcdcdc, $alpha: 0.5);
+        }
+        [class^="col-"]{
+            &:last-child{
+                .control{
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+    .home-slide{
+        .box-slide{
+            .boxes{
+                .description{
+                    display: none;
+                }
+            }
+        }
+    }
+    .main-footer{
+        &::after{
+            width: 200%;
+            height: 50%;
+            top: 0px;
+            left: -50%;
+        }
+        .container{
+            .col-group{
+                li{
+                    width: calc(100% / 2);
+                }
+            }
+        }
+    }
+}

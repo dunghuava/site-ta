@@ -1,0 +1,114 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1198px;
+  }
+}
+/* Medium devices (landscape tablets, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+  .main-header {
+    padding-bottom: 10px;
+  }
+  .main-header .three-line {
+    float: right;
+    font-size: 30px;
+    margin-top: 10px;
+    display: block;
+  }
+  .main-header .menu-desktop {
+    display: block;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    right: -100%;
+    width: 65%;
+    z-index: 50;
+    transition: all 0.2s;
+  }
+  .main-header .menu-desktop.opened {
+    right: 0px;
+  }
+  .main-header .menu-desktop.opened::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 0.3s;
+  }
+  .main-header .menu-desktop ul {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+    background: var(--primary-color);
+  }
+  .main-header .menu-desktop ul li {
+    display: block;
+    padding: 10px 0px;
+  }
+  .home-slide {
+    padding: 25px 0px 0px 0px;
+  }
+  .home-slide .banner {
+    display: none;
+  }
+  .home-slide .box-slide .boxes {
+    margin-bottom: 25px;
+  }
+  .form-filter .control {
+    margin-bottom: 15px;
+  }
+  .form-filter .control button {
+    width: 100%;
+  }
+  .about-ominext .wrapper::after {
+    left: 25px;
+    top: 25px;
+  }
+  .about-ominext .wrapper .retangle {
+    padding: 10px 15px;
+    width: auto;
+  }
+  .about-ominext .wrapper .retangle h4 {
+    font-size: 20px;
+  }
+  .about-ominext .wrapper .retangle.one {
+    right: -5%;
+  }
+  .about-ominext .wrapper .retangle.two {
+    right: -5%;
+  }
+  .about-ominext .wrapper .retangle.three {
+    left: -5%;
+  }
+  .feedback-ominext .feedback-list .wrapper .feedback-text {
+    padding: 45px;
+  }
+  .feedback-ominext .feedback-list .wrapper .feedback-text .content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .feedback-ominext .feedback-list.owl-carousel .owl-nav button {
+    bottom: 25px;
+  }
+  .follow-ominext {
+    height: 340px;
+  }
+  .main-footer {
+    padding: 15px 0px;
+    margin-top: 155px;
+  }
+  .main-footer::after {
+    top: 35px;
+  }
+  .main-footer .col-group li {
+    width: 33.3333333333%;
+  }
+}/*# sourceMappingURL=tablet.css.map */

@@ -1,0 +1,141 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    .container {
+        max-width: 1198px;
+    }
+}
+
+/* Medium devices (landscape tablets, 992px and down) */
+@media only screen and (max-width: 992px){
+    .container {
+        max-width: 90%;
+    }
+    .main-header{
+        padding-bottom: 10px;
+        .three-line{
+            float: right;
+            font-size: 30px;
+            margin-top: 10px;
+            display: block;
+        }
+        .menu-desktop{
+            display: block;
+            position: fixed;
+            height: 100%;
+            top: 0px;
+            right: -100%;
+            width: 65%;
+            z-index: 50;
+            transition: all 0.2s;
+            &.opened{
+                right: 0px;
+                &::after{
+                    content: '';
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0px;
+                    left: 0px;
+                    background: rgba($color: #000000, $alpha: 0.7);
+                    z-index: -1;
+                    transition: all 0.3s;
+                }
+            }
+            ul{
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding-top: 25px;
+                background: var(--primary-color);
+                li{
+                    display: block;
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+
+    .home-slide{
+        padding: 25px 0px 0px 0px;
+        .banner{
+            display: none;
+        }
+        .box-slide{
+            .boxes{
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .form-filter{
+        .control{
+            margin-bottom: 15px;
+            button{
+                width: 100%;
+            }
+        }
+    }
+
+    .about-ominext{
+        .wrapper{
+            &::after{
+                left: 25px;
+                top: 25px;
+            }
+            .retangle{
+                padding: 10px 15px;
+                width: auto;
+                h4{
+                    font-size: 20px;
+                }
+                &.one{
+                    right: -5%;
+                }
+                &.two{
+                    right: -5%;
+                }
+                &.three{
+                    left: -5%;
+                }
+            }
+        }
+    }
+
+    .feedback-ominext{
+        .feedback-list{
+            .wrapper{
+                .feedback-text{
+                    padding: 45px;
+                    .content{
+                        height: 100%;
+                        overflow: hidden;
+                    }
+                }
+            }
+            &.owl-carousel{
+                .owl-nav{
+                    button{
+                        bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .follow-ominext{
+        height: 340px;
+    }
+
+    .main-footer{
+        padding: 15px 0px;
+        margin-top: 155px;
+        &::after{
+            top: 35px;
+        }
+        .col-group{
+            li{
+                width: calc(100% / 3);
+            }
+        }
+    }
+}
